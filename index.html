@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Element Color Changes When Heated</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Chemical Element Color Changes When Heated</h1>
+    <p>Click on an element to see the color change when heated:</p>
+
+    <div class="element-buttons">
+      <button class="element-btn" onclick="showColorChange('Li')">Lithium (Li)</button>
+      <button class="element-btn" onclick="showColorChange('Na')">Sodium (Na)</button>
+      <button class="element-btn" onclick="showColorChange('K')">Potassium (K)</button>
+      <button class="element-btn" onclick="showColorChange('Rb')">Rubidium (Rb)</button>
+      <button class="element-btn" onclick="showColorChange('Ca')">Calcium (Ca)</button>
+      <button class="element-btn" onclick="showColorChange('Sr')">Strontium (Sr)</button>
+    </div>
+
+    <div id="color-change-result">
+      <h2 id="element-name">Select an element</h2>
+      <div id="color-change-container">
+        <div id="bottle">
+          <div id="element-inside"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
